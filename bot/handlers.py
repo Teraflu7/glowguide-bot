@@ -13,4 +13,4 @@ commands = [
 # /skintype -> choose skin type
 # /routine -> morning/evening skincare routine
 # /ingredient -> information about skincare ingredients
-# /favorites -> saved recommendations
+# /favorites -> saved recommendationss
