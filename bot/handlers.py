@@ -1,16 +1,10 @@
-commands = [
-    "/start",
-    "/help",
-    "/skintype",
-    "/routine",
-    "/ingredient",
-    "/favorites"
-]
+from aiogram.filters import Command
+from aiogram.types import Message
 
-# Описание команд
-# /start -> welcome message
-# /help -> bot instructions
-# /skintype -> choose skin type
-# /routine -> morning/evening skincare routine
-# /ingredient -> information about skincare ingredients
-# /favorites -> saved recommendationss
+# Future handlers for GlowGuide Bot
+
+async def start_message(message: Message):
+    await message.answer(
+        "Привет! ✨\n"
+        "Выбери тип кожи ниже 💖"
+    )
