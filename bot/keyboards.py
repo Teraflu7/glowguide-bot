@@ -1,17 +1,18 @@
-# Main menu buttons for GlowGuide Bot
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-main_menu_buttons = [
-    "🧴 Выбрать тип кожи",
-    "🌞 Утренняя рутина",
-    "🌙 Вечерняя рутина",
-    "🧪 Ингредиенты",
-    "⭐️ Избранное"
-]
-
-skin_type_buttons = [
-    "💧 Сухая кожа",
-    "✨ Жирная кожа",
-    "🌿 Нормальная кожа",
-    "🌗 Комбинированная кожа",
-    "🌸 Чувствительная кожа"
-]
+main_keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="💧 Сухая кожа"),
+            KeyboardButton(text="✨ Жирная кожа")
+        ],
+        [
+            KeyboardButton(text="🌿 Нормальная кожа"),
+            KeyboardButton(text="🌗 Комбинированная кожа")
+        ],
+        [
+            KeyboardButton(text="🌸 Чувствительная кожа")
+        ]
+    ],
+    resize_keyboard=True
+)
